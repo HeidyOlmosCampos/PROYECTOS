@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+  <TextView
+      android:id="@+id/t1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:textColor="@android:color/primary_text_dark"
+      android:layout_marginTop="50dp"
+      android:gravity="center"
+      android:text="INTRODUZCA LA RUTA A CONSULTAR"
+      android:textStyle="bold"
+      android:textSize="27sp"
+    app:layout_constraintLeft_toLeftOf = "parent"
+    app:layout_constraintRight_toRightOf = "parent"
+    app:layout_constraintTop_toTopOf = "parent"/>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recycler1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/campo_texto"
+      android:visibility="gone"
+      android:layout_marginTop="70dp"/>
+
+  <Button
+      android:id="@+id/boton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_centerInParent="true"
+      android:layout_marginEnd="154dp"
+      android:layout_marginBottom="197dp"
+      android:backgroundTint="#3F51B5"
+      android:onClick="acceder"
+      android:text="Buscar"
+      android:textColor="@android:color/white" />
+
+  <ImageView
+      android:id="@+id/imageView6"
+      android:layout_width="163dp"
+      android:layout_height="138dp"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="134dp"
+      android:layout_marginEnd="115dp"
+      android:foregroundGravity="center"
+      android:src="@drawable/escudo" />
+
+  <EditText
+      android:id="@+id/campo_texto"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_centerVertical="true"
+      android:layout_marginStart="5dp"
+      android:hint="Texto de entrada" />
+
+  <EditText
+      android:id="@+id/campo_texto2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="-2dp"
+      android:layout_marginBottom="245dp"
+      android:hint="Texto de entrada" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginTop="286dp"
+      android:layout_marginEnd="36dp"
+      android:text="TextView" />
+
+
+</RelativeLayout>
